@@ -32,7 +32,7 @@ def f3(n):
             k += 1
     return r
 
-# Return the sum of a sum (sum_m_from1ton{sum_p_from1tom}). number of iterations is the sum from 1 to n
+# Return the sum of a sum (sum_m_from1ton{sum_p_from1tom}). number of iterations is n*(n+1)/2
 def f4(n):
     r = 0
     for i in range(1, n+1):
@@ -58,7 +58,7 @@ def r3(n):
     if n==0: return 0
     return 1+2*r3(n-1)
 
-# Returns 2^n - 1, has 2*n recursive calls
+# Returns 2^n - 1, has 2(2^n -1) recursive calls
 def r4(n):
     if n==0: return 0
     return 1+r4(n-1)+r4(n-1)
