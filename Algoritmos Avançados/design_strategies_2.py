@@ -58,9 +58,7 @@ def count_dec(int_list):
 
 
 
-
-
-int_list = range(1, 797576)
+int_list = range(1, 7975766)
 print(count_bf(int_list))
 print(count_div(int_list))
 print(count_dec(int_list))
